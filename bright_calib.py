@@ -4,7 +4,7 @@ import Image
 
 
 
-PATH_IN = '/home/ply/image/20160818/'
+PATH_IN = global_path
 
 
 if __name__ == '__main__':
@@ -40,8 +40,8 @@ if __name__ == '__main__':
     img = np.array(img)
     mean = np.mean(img)
     img = img - mean
-    img = img * 1.5 + mean * 0.7
-#    img = img / 255.
+    img = img * 0.5 + mean * 0.7
+    img = img / 255.
     cv2.imwrite(PATH_IN + "dst.jpg", img)
 
 

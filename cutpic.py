@@ -1,3 +1,8 @@
+"""
+Created on 2016.09.06
+cut left and right image
+"""
+
 from util import *
 
 from common import splitfn
@@ -6,8 +11,9 @@ import sys
 import getopt
 from glob import glob
 
-PATH_IN ='/home/ply/image/20160818/zoomPic'
-PATH_OUT = '/home/ply/image/20160818/left_right_Pic'
+PATH_IN = global_path+'/zoomPic'
+PATH_OUT = global_path+'/left_right_Pic'
+
 
 if __name__ == '__main__':
 
@@ -29,4 +35,6 @@ if __name__ == '__main__':
         path, name, ext = splitfn(fn)
         cv2.imwrite(PATH_OUT+'/left-%s.jpg'% name ,leftimg)
         cv2.imwrite(PATH_OUT+'/right-%s.jpg'% name , rightimg)
+
+    print 'get left and right picture success!!!'
 

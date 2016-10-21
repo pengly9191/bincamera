@@ -3,8 +3,8 @@ from util import *
 from glob import glob
 from common import splitfn
 
-PATH_IN = '/home/ply/image/20160818'
-PATH_OUT = '/home/ply/image/20160818/flit'
+PATH_IN = global_path
+PATH_OUT = global_path+'/flit'
 
 if __name__ == '__main__':
 

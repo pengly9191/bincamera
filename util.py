@@ -9,7 +9,9 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 from scipy.sparse import linalg
 
+global_path ="/home/ply/image/20161020"
 
+PATH_IN_ALL = "/home/ply/image/picture/"
 
 _begin = 0
 total_time = datetime.timedelta()
